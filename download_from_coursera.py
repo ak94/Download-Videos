@@ -43,12 +43,12 @@ def get_mp4(list_of_all_links):
 def open_in_browser(link):
     i=0
     while i < len(link):
-        webbrowser.openurl(url)
+        webbrowser.open(link[i])
         i = i+1
 
         
 # paste your link below
-download_vid_from = 'https://class.coursera.org/optimization-002/lecture'
+download_vid_from = 'https://class.coursera.org/posa-002/lecture'
 
 open_in_browser(get_mp4(get_all_link(get_page(download_vid_from))))
 
